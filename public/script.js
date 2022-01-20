@@ -8,7 +8,7 @@ const peers = {} //to contain the users
 
 var peer = new Peer(undefined, {
 	path: '/peerjs',
-	host:'/',
+	host:'reach-0.herokuapp.com',
 	port: '443'
 }); 
 
