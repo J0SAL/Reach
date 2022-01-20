@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Open Sans;
+}
+
+/*home page start*/
+#reach-home-img{
+    height:  auto;
+    width:  90%;
+}
+.main-div{
+    min-height: 100vh;
+}
+@media (max-width: 991px) {
+
+}
+/*home page end*/
+
+/*about page start*/
+.about-info{
+    font-size: 150%;
+    font-style: italic;
+}
+
+#about-img{
+    height:  auto;
+    width:  auto;
+}
+
+
+/*about page end*/
+
+
+
+/* room page start */
+.vid-grid{
+    max-height: 80vh;
+    min-height: 80vh;
+    /*background-color: white;*/
+    justify-content: center;
+    /*background-color: blue;*/
+}
+.vid-controls{
+    max-height: 11vh;
+    min-height: 11vh;
+    /*background-color: green;*/
+}
+video{
+    margin: 1%;
+    border-radius: 20%;
+    width: 450px;
+    height: 400px;
+}
+.room-main{
+    max-width: 97vw;
+    min-width: 97vw;
+}
+.msg-head{
+    padding: 2vh;
+    text-align: center;
+    /*background-color: red;*/
+}
+.msg-view{
+    max-height: 55vh;
+    /*min-height: 72vh;*/
+    /*background-color: yellow;*/
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.messages{
+    /*color: darkblue;*/
+    list-style: none;
+    color: black;
+    padding: 2%;
+}
+.msg-write{
+    max-height: 11vh;
+    min-height: 11vh;
+    /*background-color: pink;*/
+    display: flex;
+    /*color: grey;*/
+}
+.msg-write input {
+    flex-grow: 1;
+}
+
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main__controls__button:hover {
+    background-color: #B1B1B1;
+    border-radius: 5px;
+}
+
+.main__controls__button i {
+    font-size: 16px;
+}
+
+
+.leave_meeting {
+    color: #EB534B;
+}
+
+.unmute, .stop {
+    color: #CC3B33;
+}
+/* room page end */

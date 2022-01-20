@@ -1,0 +1,52 @@
+<%- include('header') -%>
+
+<!-- home page -->
+<div class="main-div">
+<div class="container">
+	
+	<div class="row my-sm-3">
+		<div class="col-lg-6 d-flex flex-column justify-content-between" id="col1">
+			<!-- headings -->
+			<div class="my-sm-3">
+				<h1>Connect with Anyone, Anywhere, Anytime!</h1>
+			</div>
+			<div class="">
+				<i><h4 class="text-secondary my-5">Work together in ways that goes beyond, with normal video call from anywhere </h4>	</i>
+			</div>	
+			<!-- !headings -->
+
+			<!-- buttons & input -->
+		   <div class="my-sm-3">
+		    	<!-- <div class="col"> -->
+		    		<a href="/room" class="btn btn-primary form-control">Create Room</a>
+		    	<!-- </div> -->
+		    </div>
+		   	
+		    <div class="row my-sm-3">
+		    	<!--  justify-content-md-center -->
+		    	<div class="col">
+		    		<!-- <label for="room_id">Join Room</label> -->
+			      	<div class="input-group">
+			        	<div class="input-group-prepend">
+			          		<span class="input-group-text"><i class="fas fa-keyboard"></i></span>
+			        	</div>
+			      		<input type="text" class="form-control" id="room_id" placeholder="Room id">
+			      	</div>
+		    	</div>
+		    	<div class="col">
+		    		<button class="form-control btn btn-primary" onclick="goToRoom()">Join</button> 
+		    	</div>
+		    </div>
+			<!-- !buttons & input -->
+
+		</div>
+		<div class="col-lg-6 d-flex flex-column justify-content-between my-sm-3">
+			<div class="text-center">
+				<img id="reach-home-img" src="/images/reach_home.png">	
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- !home page -->
+<%- include('footer') -%>

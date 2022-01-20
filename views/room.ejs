@@ -1,0 +1,86 @@
+<%- include('header') -%>
+
+<style type="text/css">
+	@keyframes gradient {
+     	 0% {
+         	 background-position: 0% 50%;
+      	}
+    	  50% {
+         	background-position: 100% 50%;
+      	}
+     	 100% {
+          	background-position: 0% 50%;
+      	}
+  	}
+	body{
+		background: linear-gradient(-45deg, #93e2e9, #f5edc6, #93e2e9, #f5edc6);
+		/*background-image: linear-gradient(to bottom right, #93e2e9, #f5f386);*/
+		animation: gradient 15s ease infinite;
+		 background-size: 400% 400%;
+	}
+</style>
+	
+<div class="room-main">
+	<div class="row ">
+		<!-- left side start-->
+		<div class="col-lg-9 left">
+			<div class="row d-flex vid-grid overflow-auto align-items-center" id="video-grid">
+				<!-- video grid -->
+			</div>		
+			<div class="row d-flex vid-controls justify-content-center">
+				<!-- here will be controllers -->
+				<!-- video controls -->
+			    <div onclick="muteUnmute()" class="main__controls__button main__mute_button">
+                  	<i class="fas fa-microphone"></i>
+                  	<span>Mute</span>
+           		</div>
+                <div onclick="playStop()" class="main__controls__button main__video_button" >
+                  <i class="fas fa-video"></i>
+                  <span>Stop Video</span>
+                </div>
+                <div onclick="copyRoomId()" class="main__controls__button main__video_button" >
+                  <i class="fas fa-copy"></i>
+                  <span>Copy Link</span>
+			 	</div>
+			 	<div onclick="leaveRoom()" class="main__controls__button">
+               		<a href="/">
+               			<span class="leave_meeting"><i class="fas fa-phone-slash"></i></span>
+                 	</a>
+                  <!-- Leave Meeting -->
+               </div>
+			</div>
+		</div>
+		<!-- left side end -->
+
+		<!-- right side start -->
+		<div class="col-lg-3 p-0">
+			<div class="bg-light my-5 mx-sm-5">
+				<div class="msg-head align-items-center">
+					<h6>Chat</h6>
+				</div>
+				<div class="msg-view">
+					<!-- <h1>msg-view </h1> -->
+					<!-- message view -->
+					<ul class="messages">						
+					</ul>
+				</div>
+				<div class="msg-write p-2 align-items-center">
+					<!-- message input box -->
+					<input class="form-control" id="chat_message" type="text" placeholder="Type message here">
+				</div>
+			</div>
+		</div>
+		<!-- right side end -->
+	</div>
+</div>
+
+
+
+
+<!-- camera only req when in room -->
+<script type="text/javascript" src="script.js"></script>
+<script>
+	const ROOM_ID = "<%= roomId %>";
+</script>
+
+<%- include('footer') -%>
