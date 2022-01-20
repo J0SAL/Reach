@@ -16,7 +16,7 @@
   <img src="https://user-images.githubusercontent.com/52382282/150292633-fdb63915-e8b3-4425-a2ea-f2f388d81861.PNG" alt="drawing" width="800"/>
 
 - ### Room
-  <img src="https://user-images.githubusercontent.com/52382282/150292825-78b357ee-b5c9-4fe9-8ac8-7b11c653d028.PNG" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/52382282/150296617-535517c2-824f-45a8-8a52-5459a653a4eb.PNG" alt="drawing" width="800"/>
 
 - ### About page
   <img src="https://user-images.githubusercontent.com/52382282/150292902-020a5a66-3825-4c49-a298-52866462e9c6.PNG" alt="drawing" width="800"/>
